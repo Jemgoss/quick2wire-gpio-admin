@@ -33,10 +33,10 @@ Then log out and back in again. (Your membership of the gpio group won't take ef
 You can now export GPIO pins and use them without having to log in as root or use the sudo command.
 
     % gpio-admin export 22
-    % cat /sys/devices/virtual/gpio/gpio22/value
+    % cat /sys/class/gpio/gpio22/value
     0
-    % echo out > /sys/devices/virtual/gpio/gpio22/direction
-    % echo 1 > /sys/devices/virtual/gpio/gpio22/value
+    % echo out > /sys/class/gpio/gpio22/direction
+    % echo 1 > /sys/class/gpio/gpio22/value
     
 When finished with a pin, unexport it again:
 

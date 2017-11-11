@@ -18,14 +18,14 @@ Exports or unexports a GPIO pin and allows only the user to control it.
 .PP
 \fBgpio export\fR \fIn\fR \fI(pullup|pulldown)\fR
 .RS 4
-exports pin \fIn\fR as files under \fB/sys/devices/virtual/gpio\fR\fIn\fR/ 
+exports pin \fIn\fR as files under \fB/sys/class/gpio/gpio\fR\fIn\fR/ 
 and makes the pin's control files readable and writeable by the user only. If the 
 optional third parameter is supplied, set the pullup or pulldown state of the pin.
 .RE
 .PP
 \fBgpio unexport\fR \fIn\fR 
 .RS 4
-unexports pin \fIn\fR, removing the directory \fB/sys/devices/virtual/gpio\fR\fIn\fR/.
+unexports pin \fIn\fR, removing the directory \fB/sys/class/gpio/gpio\fR\fIn\fR/.
 .RE
 
 .SH NOTE
